@@ -27,7 +27,7 @@ In case you want to test it yourself, here is a main.c file for compilation.
 ```c
 #include "ft_printf.h"
 
-int  main void()
+int  main (void)
 {
   ft_printf("message");
 }
