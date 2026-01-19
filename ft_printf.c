@@ -20,8 +20,12 @@ int	ft_printf(const char *format, ...)
 	int		count;
 	va_list	args;
 
+	if (format == NULL)
+		return (-1);
 	count = 0;
 	va_start(args, format);
+	if (format[0] == '0')
+		return (-1);
 	count = print_loop(format, count, &args);
 	va_end(args);
 	return (count);
